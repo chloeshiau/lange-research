@@ -31,7 +31,7 @@ for name in table_nm:
 		rowarray_list.append(t)
 
 	j = json.dumps(rowarray_list)
-	rowarrays_file = name + '.json'
+	rowarrays_file = 'json/'+name + '.json'
 	f = open(rowarrays_file,'w')
 	print >> f, j
 	cursor.close()
